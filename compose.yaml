@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   bf-registry:
-    build: .
+    build:
+      context: .
     container_name: bf-registry-container
     ports:
       - 8761:8761
