@@ -6,6 +6,12 @@ services:
     container_name: bf-registry-container
     ports:
       - 8761:8761
+    environment:
+      server.port: 8761
+      spring.application.name: bf-registry
+      eureka.client.registerWithEureka: false
+      eureka.client.fetchRegistry: false
+      management.endpoints.web.exposure.include: health,info
     networks:
       - bf-network
 networks:

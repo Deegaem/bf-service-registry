@@ -1,11 +1,11 @@
-spring:
-  application:
-    name: bf-registry
-eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-server:
-  port: 8761
-management:
-  endpoints.web.exposure.include: health,info
+#spring:
+#  application:
+#    name: bf-registry
+#eureka:
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#server:
+#  port: 8761
+#management:
+#  endpoints.web.exposure.include: health,info
